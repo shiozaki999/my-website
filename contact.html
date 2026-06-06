@@ -10,16 +10,18 @@
 <body>
 
   <header>
-    <h1>FrameWorks</h1>
+  <h1>FrameWorks</h1>
 
-<nav id="nav-menu">
-  <a href="index.html">HOME</a>
-  <a href="about.html">ABOUT US</a>
-  <a href="service.html">SERVICES</a>
-  <a href="used-machines.html">USED MACHINES</a>
-  <a href="contact.html">CONTACT</a>
-</nav>
-  </header>
+  <button class="menu-button" id="menu-button">☰</button>
+
+  <nav id="nav-menu">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT US</a>
+    <a href="service.html">SERVICES</a>
+    <a href="used-machines.html">USED MACHINES</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+</header>
 
   <main>
     <section class="page-title">
@@ -38,6 +40,13 @@ Our team will respond to your inquiry as soon as possible.
 </p>
     </section>
   </main>
+<script>
+  const menuButton = document.getElementById("menu-button");
+  const navMenu = document.getElementById("nav-menu");
 
+  menuButton.onclick = function() {
+    navMenu.classList.toggle("active");
+  }
+</script>
 </body>
 </html>
