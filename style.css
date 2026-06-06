@@ -1,0 +1,399 @@
+body {
+  background: white;
+  font-family: sans-serif;
+}
+  header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 50px;
+  background: linear-gradient(
+    to bottom,
+    rgba(107, 107, 105, 0.95),
+    rgba(107, 107, 105, 0)
+  );
+}
+
+header h1 {
+  color: #f39800;
+  font-size: 42px;
+  font-family: "NotReally", sans-serif;
+  letter-spacing: 3px;
+
+  -webkit-text-stroke: 0.2px black;
+  text-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+header h3 {
+  color: #f39800;
+  font-size: 24px;
+  font-family: "NotReally", sans-serif;
+  letter-spacing: 3px;
+
+  -webkit-text-stroke: 0.2px black;
+  text-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+
+  margin-left: 30px;
+
+  font-size: 18px;
+}
+
+.page-title {
+  width: 80%;
+  margin: 100px auto;
+  color: white;
+  
+  background: white;
+  color: black;
+  font-family: sans-serif;
+}
+img {
+  display: block;
+  border-radius: 20px;
+}
+
+.hero {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background:
+    linear-gradient(rgba(255,255,255,0.82), rgba(255,255,255,0.92)),
+    url("images/machines/machine01/01.jpg");
+
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+}
+
+.hero-content {
+  max-width: 820px;
+}
+
+.hero-logo {
+  width: 260px;
+  margin: 0 auto 30px;
+}
+
+.hero-subtitle {
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #f39800;
+  font-weight: bold;
+}
+
+.hero h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin: 20px 0;
+  color: #111;
+}
+
+.hero-text {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.8;
+}
+
+.hero-buttons {
+  margin-top: 35px;
+}
+
+.main-button,
+.sub-button {
+  display: inline-block;
+  padding: 14px 30px;
+  margin: 8px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.main-button {
+  background: black;
+  color: white;
+}
+
+.sub-button {
+  border: 1px solid black;
+  color: black;
+  background: white;
+}
+
+.catch {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #555;
+}
+
+.main-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 28px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 999px;
+}
+
+.company {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.pickup,
+.stock {
+  width: 80%;
+  margin: 100px auto;
+  color: black;
+}
+
+.pickup h2,
+.stock h2 {
+  font-size: 36px;
+  color: rgb(11, 11, 11);
+  margin-bottom: 30px;
+  
+}
+
+.machine-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.machine-card {
+  background: #1f1f1f;
+  width: 300px;
+  padding: 20px;
+  border-radius: 16px;
+  transition: 0.3s;
+}
+.machine-card:hover {
+  transform: translateY(-5px);
+}
+
+.machine-card img {
+  width: 100%;
+  border-radius: 12px;
+  color: white;
+}
+
+.machine-card h3 {
+  font-size: 22px;
+  margin-top: 15px;
+  color: white;
+  margin-top: 10px;
+}
+
+.machine-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: white;
+}
+
+.more-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 28px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 999px;
+}
+.detail-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+
+  background: white;
+  color: black;
+
+  text-decoration: none;
+  border-radius: 8px;
+
+  font-size: 14px;
+}
+.detail-button:hover {
+  background: #ccc;
+}
+.back-button {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  padding: 8px 16px;
+
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 999px;
+
+  color: rgb(125, 124, 124);
+  text-decoration: none;
+
+  font-size: 14px;
+}
+
+.back-button:hover {
+  background: white;
+  color: black;
+}
+.main-photo {
+  width: 25%;
+  max-width: 450px;
+  display: block;
+  margin: 30px 0;
+  border-radius: 16px;
+  cursor: pointer;
+}
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.detail {
+  width: 80%;
+  margin: 100px auto;
+  color: black;
+}
+
+.photo-gallery img {
+  width: 100%;
+  margin: 0;
+  border-radius: 10px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.machine-info {
+  width: 60%;
+  margin-top: 30px;
+  line-height: 1.8;
+  color: black;
+}
+
+.detail-top {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  max-width: 70%;
+  max-height: 80%;
+}
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+.menu-button {
+  display: none;
+}
+
+/* ===== スマホ対応 ===== */
+@media (max-width: 768px) {
+
+  header {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .menu-button {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  nav.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .hero {
+    margin-top: 80px;
+  }
+
+  .hero-logo {
+    width: 220px;
+  }
+
+  .machine-list {
+    flex-direction: column;
+  }
+
+  .machine-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .detail {
+    width: 90%;
+    margin: 60px auto;
+  }
+
+  .detail-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .main-photo {
+    width: 100%;
+    max-width: none;
+  }
+
+  .machine-info {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .photo-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

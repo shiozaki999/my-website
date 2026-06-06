@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>TADANO GR-250N | FrameWorks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Crane Market</h1>
+
+<nav id="nav-menu">
+  <a href="index.html">HOME</a>
+  <a href="about.html">ABOUT US</a>
+  <a href="service.html">SERVICES</a>
+  <a href="used-machines.html">USED MACHINES</a>
+  <a href="contact.html">CONTACT</a>
+</nav>
+</header>
+
+<main class="detail">
+
+  <a href="used-machines.html" class="back-button">
+  ← Back to Inventory
+</a>
+
+  <h2>TADANO GR-250N</h2>
+
+  <div class="detail-top">
+  <img class="main-photo" src="images/machines/machine01/01.jpg" alt="TADANO GR-250N">
+  
+  <div class="machine-info">
+  <p><strong>Manufacturer:</strong> TADANO</p>
+  <p><strong>Model:</strong> GR-250N</p>
+  <p><strong>Year:</strong> 2018</p>
+  <p><strong>Mileage:</strong> 45,000 km</p>
+  <p><strong>Operating Hours:</strong> 3,200 h</p>
+  <p><strong>Price:</strong> Contact us</p>
+  <p><strong>Condition:</strong> Good</p>
+  <p><strong>Remarks:</strong> Used in Japan. Please contact us for more details.</p>
+</div>
+</div>
+
+
+  <div class="photo-gallery">
+    <img src="images/machines/machine01/01.jpg" alt="">
+    <img src="images/machines/machine01/02.jpg" alt="">
+    <img src="images/machines/machine01/03.jpg" alt="">
+    <img src="images/machines/machine01/04.jpg" alt="">
+  </div>
+
+  <a href="used-machines.html" class="back-button">
+  ← Back to Inventory
+</a>
+</main>
+<div id="modal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modal-img">
+</div>
+<script>
+  const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("modal-img");
+
+  // メイン画像も対象にする
+  const images = document.querySelectorAll(".photo-gallery img, .main-photo");
+
+  images.forEach(img => {
+    img.onclick = function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    }
+  });
+
+  document.querySelector(".close").onclick = function(e) {
+    e.stopPropagation(); // ←これ重要
+    modal.style.display = "none";
+  }
+
+  modal.onclick = function() {
+    modal.style.display = "none";
+  }
+</script>
+</body>
+
+</html>

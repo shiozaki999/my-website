@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>TADANO GR-250N-4 | FrameWorks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Crane Market</h1>
+
+<nav id="nav-menu">
+  <a href="index.html">HOME</a>
+  <a href="about.html">ABOUT US</a>
+  <a href="service.html">SERVICES</a>
+  <a href="used-machines.html">USED MACHINES</a>
+  <a href="contact.html">CONTACT</a>
+</nav>
+</header>
+
+<main class="detail">
+
+  <a href="used-machines.html" class="back-button">
+  ← Back to Inventory
+</a>
+
+  <h2>KATO KR-50H</h2>
+
+  <div class="detail-top">
+  <img class="main-photo" src="images/machines/machine03/01.PNG" alt="KATO KR-50H">
+  
+  <div class="machine-info">
+  <p><strong>Manufacturer:</strong> TADANO</p>
+  <p><strong>Model:</strong> GR-250N-4</p>
+  <p><strong>Year:</strong> 2018</p>
+  <p><strong>Mileage:</strong> 35,029 km</p>
+  <p><strong>Operating Hours:</strong> 10,381h</p>
+  <p><strong>Price:</strong> Contact us</p>
+  <p><strong>Condition:</strong> Good</p>
+  <p><strong>Remarks:</strong> Used in Japan. Please contact us for more details.</p>
+</div>
+</div>
+
+
+  <div class="photo-gallery">
+    <img src="images/machines/machine03/02.PNG" alt="">
+    <img src="images/machines/machine03/03.PNG" alt="">
+    <img src="images/machines/machine03/04.PNG" alt="">
+    <img src="images/machines/machine03/05.PNG" alt="">
+    <img src="images/machines/machine03/06.JPG" alt="">
+    <img src="images/machines/machine03/07.JPEG" alt="">
+    <img src="images/machines/machine03/08.JPG" alt="">
+    <img src="images/machines/machine03/09.JPG" alt="">
+    <img src="images/machines/machine03/10.JPG" alt="">
+  </div>
+
+  <a href="used-machines.html" class="back-button">
+  ← Back to Inventory
+</a>
+</main>
+<div id="modal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modal-img">
+</div>
+<script>
+  const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("modal-img");
+
+  // メイン画像も対象にする
+  const images = document.querySelectorAll(".photo-gallery img, .main-photo");
+
+  images.forEach(img => {
+    img.onclick = function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    }
+  });
+
+  document.querySelector(".close").onclick = function(e) {
+    e.stopPropagation(); // ←これ重要
+    modal.style.display = "none";
+  }
+
+  modal.onclick = function() {
+    modal.style.display = "none";
+  }
+</script>
+</body>
+
+</html>
