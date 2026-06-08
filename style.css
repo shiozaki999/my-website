@@ -222,6 +222,12 @@ img {
 .detail-button:hover {
   background: #ccc;
 }
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 220px;
+}
 .back-button {
   display: inline-block;
   margin-bottom: 20px;
@@ -240,6 +246,13 @@ img {
 .back-button:hover {
   background: white;
   color: black;
+}
+.back-button,
+.contact-button {
+  display: block;
+  width: 220px;
+  text-align: center;
+  box-sizing: border-box;
 }
 .main-photo {
   width: 25%;
@@ -395,4 +408,5 @@ img {
   .photo-gallery {
     grid-template-columns: repeat(2, 1fr);
   }
+
 }

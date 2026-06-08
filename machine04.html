@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TADANO GR-130N-1 | FrameWorks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1><a href="used-machines.html">Crane Market</a></h1>
+  <h3>Direct From Japan</h3>
+  <button class="menu-button" id="menu-button">☰</button>
+
+  <nav id="nav-menu">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT US</a>
+    <a href="service.html">SERVICES</a>
+    <a href="used-machines.html">USED MACHINES</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+</header>
+
+<main class="detail">
+
+  <a href="used-machines.html" class="back-button">
+  ← Back to Inventory
+</a>
+
+  <h2>TADANO GR-130N-1</h2>
+
+  <div class="detail-top">
+  <img class="main-photo" src="images/machines/machine04/01.jpg" alt="TADANO GR-130N-1">
+  
+  <div class="machine-info">
+  <p><strong>Manufacturer:</strong> TADANO</p>
+  <p><strong>Model:</strong> GR-130N-1</p>
+  <p><strong>Year:</strong> 2014</p>
+  <p><strong>Mileage:</strong> km</p>
+  <p><strong>Operating Hours:</strong> h</p>
+  <p><strong>Price:</strong> Contact us</p>
+  <p><strong>Condition:</strong> Good</p>
+  <p><strong>Remarks:</strong> Used in Japan. Please contact us for more details.</p>
+</div>
+</div>
+
+
+  <div class="photo-gallery">
+    <img src="images/machines/machine04/02.jpg" alt="">
+    <img src="images/machines/machine04/03.jpg" alt="">
+    <img src="images/machines/machine04/04.jpg" alt="">
+    <img src="images/machines/machine04/05.jpg" alt="">
+    <img src="images/machines/machine04/06.jpg" alt="">
+    <img src="images/machines/machine04/07.jpg" alt="">
+    <img src="images/machines/machine04/08.jpg" alt="">
+    <img src="images/machines/machine04/09.jpg" alt="">
+    <img src="images/machines/machine04/10.jpg" alt="">
+    <img src="images/machines/machine04/11.jpg" alt="">
+  </div>
+
+  <a href="used-machines.html" class="back-button">
+  ← Back to Inventory
+</a>
+</main>
+<div id="modal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modal-img">
+</div>
+<script>
+  const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("modal-img");
+
+  // メイン画像も対象にする
+  const images = document.querySelectorAll(".photo-gallery img, .main-photo");
+
+  images.forEach(img => {
+    img.onclick = function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    }
+  });
+
+  document.querySelector(".close").onclick = function(e) {
+    e.stopPropagation(); // ←これ重要
+    modal.style.display = "none";
+  }
+
+  modal.onclick = function() {
+    modal.style.display = "none";
+  }
+</script>
+<script>
+  const menuButton = document.getElementById("menu-button");
+  const navMenu = document.getElementById("nav-menu");
+
+  menuButton.onclick = function() {
+    navMenu.classList.toggle("active");
+  }
+</script>
+</body>
+
+</html>
