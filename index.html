@@ -9,17 +9,19 @@
 </head>
 <body>
   <header>
-  <h1><a href="index.html">FrameWorks</a></h1>
+  <h1>
+    <a class="logo-link" href="index.html">FrameWorks</a>
+  </h1>
 
   <button class="menu-button" id="menu-button">☰</button>
 
-<nav id="nav-menu">
-  <a href="index.html">HOME</a>
-  <a href="about.html">ABOUT US</a>
-  <a href="service.html">SERVICES</a>
-  <a href="used-machines.html">USED MACHINES</a>
-  <a href="contact.html">CONTACT</a>
-</nav>
+  <nav id="nav-menu">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT US</a>
+    <a href="service.html">SERVICES</a>
+    <a href="used-machines.html">USED MACHINES</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
 </header>
   
   <section class="hero">
@@ -42,8 +44,10 @@
   const menuButton = document.getElementById("menu-button");
   const navMenu = document.getElementById("nav-menu");
 
-  menuButton.onclick = function() {
-    navMenu.classList.toggle("active");
+  if(menuButton){
+    menuButton.onclick = function() {
+      navMenu.classList.toggle("active");
+    }
   }
 </script>
 

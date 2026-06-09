@@ -10,7 +10,9 @@
 <body>
 
   <header>
-  <h1><a href="index.html">FrameWorks</a></h1>
+  <h1>
+    <a class="logo-link" href="index.html">FrameWorks</a>
+  </h1>
 
   <button class="menu-button" id="menu-button">☰</button>
 
@@ -22,7 +24,6 @@
     <a href="contact.html">CONTACT</a>
   </nav>
 </header>
-
   <main>
     <section class="page-title">
       <h2>Contact</h2>
@@ -44,8 +45,10 @@ Our team will respond to your inquiry as soon as possible.
   const menuButton = document.getElementById("menu-button");
   const navMenu = document.getElementById("nav-menu");
 
-  menuButton.onclick = function() {
-    navMenu.classList.toggle("active");
+  if(menuButton){
+    menuButton.onclick = function() {
+      navMenu.classList.toggle("active");
+    }
   }
 </script>
 </body>
