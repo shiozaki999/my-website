@@ -335,6 +335,13 @@ img {
 /* ===== スマホ対応 ===== */
 @media (max-width: 768px) {
 
+   header {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
   .menu-button {
     display: block;
     position: absolute;
@@ -363,7 +370,7 @@ img {
     padding: 12px 0;
     margin: 0;
   }
-}
+
 
   .hero {
     margin-top: 80px;
